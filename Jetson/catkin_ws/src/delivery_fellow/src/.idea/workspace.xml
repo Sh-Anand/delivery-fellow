@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14f59a03-80f1-4554-9e77-0c0bba8320cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutoFollowController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Arduino/SerialComms/SerialComms.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Arduino/SerialComms/SerialComms.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Arduino/SerialCommsInterrupt/SerialCommsInterrupt.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Arduino/SerialCommsInterrupt/SerialCommsInterrupt.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JoystickControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/JoystickControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/AutoFollow.py" beforeDir="false" afterPath="$PROJECT_DIR$/AutoFollow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/AutoFollowController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/Boxtimate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Boxtimate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/Camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/Camera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/Constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/Constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/DiffDriveController.py" beforeDir="false" afterPath="$PROJECT_DIR$/DiffDriveController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/KeyboardControl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/Motor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Motor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/MotorControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MotorControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/Test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/TestCam.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/serialtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/serialtest.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1nOqrzXS9eJUwVSbqoER6C0pkUy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14f59a03-80f1-4554-9e77-0c0bba8320cc" name="Default Changelist" comment="" />
+      <created>1611271687609</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611271687609</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1063" y="460" width="428" height="484" key="FileChooserDialogImpl" timestamp="1611271826888">
+      <screen x="0" y="0" width="2560" height="1403" />
+    </state>
+    <state x="1063" y="460" width="428" height="484" key="FileChooserDialogImpl/0.0.2560.1403@0.0.2560.1403" timestamp="1611271826888" />
+  </component>
+</project>

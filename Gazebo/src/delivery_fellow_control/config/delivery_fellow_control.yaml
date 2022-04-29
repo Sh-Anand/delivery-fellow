@@ -1,0 +1,32 @@
+delivery_fellow:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+
+  # Effort Controllers ---------------------------------------
+  wheel_R1_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: joint_leg_wheel_R1
+    pid: {p: 100.0, i: 0.1, d: 10.0}
+  wheel_R2_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: joint_leg_wheel_R2
+    pid: {p: 100.0, i: 0.1, d: 10.0}
+  wheel_R3_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: joint_leg_wheel_R3
+    pid: {p: 100.0, i: 0.1, d: 10.0}
+  wheel_L1_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: joint_leg_wheel_L1
+    pid: {p: 100.0, i: 0.1, d: 10.0}
+  wheel_L2_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: joint_leg_wheel_L2
+    pid: {p: 100.0, i: 0.1, d: 10.0}
+  wheel_L3_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: joint_leg_wheel_L3
+    pid: {p: 100.0, i: 0.1, d: 10.0}

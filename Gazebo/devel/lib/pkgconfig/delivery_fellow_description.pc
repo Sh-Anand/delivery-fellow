@@ -1,0 +1,8 @@
+prefix=/home/shashank/ARMS/delivery-fellow/Gazebo/devel
+
+Name: delivery_fellow_description
+Description: Description of delivery_fellow_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

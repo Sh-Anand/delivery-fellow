@@ -1,0 +1,2 @@
+delivery_fellow
+-DCATKIN_DEVEL_PREFIX=/home/shashank/ARMS/delivery-fellow/Jetson/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/shashank/ARMS/delivery-fellow/Jetson/catkin_ws/install -G Unix Makefiles

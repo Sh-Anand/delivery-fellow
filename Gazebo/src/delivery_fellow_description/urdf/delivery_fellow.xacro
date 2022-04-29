@@ -1,0 +1,448 @@
+<?xml version="1.0"?>
+<robot name="delivery_fellow" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find delivery_fellow_description)/urdf/delivery_fellow.gazebo" />
+  <!-- <xacro:include filename="$(find delivery_fellow_description)/urdf/materials.xacro" /> -->
+  <!-- <xacro:include filename="$(find delivery_fellow_description)/urdf/macros.xacro" /> -->
+
+  <!-- robot description -->
+  <link name='link_body'>
+    <inertial>
+      <origin xyz="0 0 5.3" rpy="0 0 0"/>
+      <mass value="40"/>
+      <inertia ixx="340.884" ixy="0" ixz="0" iyy="254.167" iyz="0" izz="168.384"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 2.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="$(find delivery_fellow_description)/dae/body.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 3.8" rpy="0 -0 0"/>
+      <geometry>
+        <box size="7.93 6.18588 3"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name='link_body_2'>
+    <collision>
+      <origin xyz="0 0 8.8" rpy="0 -0 0" />
+      <geometry>
+        <box size="3.5 6.18588 8"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name='joint_body_self_2' type='fixed'>
+    <parent link="link_body"/>
+    <child link="link_body_2"/>
+  </joint>
+
+  <link name='link_leg_RF'>
+    <inertial>
+      <origin xyz="0 0 -1.3" rpy="0 0 1.5708"/>
+      <mass value="4"/>
+      <inertia ixx="4.41667" ixy="0" ixz="0" iyy="4.15083" iyz="0" izz="0.400833"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -2.3" rpy="0 0 1.5708"/>
+      <geometry>
+        <mesh filename="$(find delivery_fellow_description)/dae/bogie.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.8 0 -0.9" rpy="0 0.8 0"/>
+      <geometry>
+        <box size="1.2 0.4 3.2"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name='link_leg_RF_2'>
+    <collision>
+      <origin xyz="0.8 0 -0.9" rpy="0 -0.8 0"/>
+      <geometry>
+        <box size="1.2 0.4 3.2"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name='joint_leg_RF_self_2' type='fixed'>
+    <parent link="link_leg_RF"/>
+    <child link="link_leg_RF_2"/>
+  </joint>
+
+  <link name='link_leg_LF'>
+    <inertial>
+      <origin xyz="0 0 -1.3" rpy="0 0 1.5708"/>
+      <mass value="4"/>
+      <inertia ixx="4.41667" ixy="0" ixz="0" iyy="4.15083" iyz="0" izz="0.400833"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -2.3" rpy="0 0 1.5708"/>
+      <geometry>
+        <mesh filename="$(find delivery_fellow_description)/dae/bogie.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.8 0 -0.9" rpy="0 0.8 0"/>
+      <geometry>
+        <box size="1.2 0.4 3.2"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name='link_leg_LF_2'>
+    <collision>
+      <origin xyz="0.8 0 -0.9" rpy="0 -0.8 0"/>
+      <geometry>
+        <box size="1.2 0.4 3.2"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name='joint_leg_LF_self_2' type='fixed'>
+    <parent link="link_leg_LF"/>
+    <child link="link_leg_LF_2"/>
+  </joint>
+
+  <link name='link_leg_RB'>
+    <inertial>
+      <origin xyz="0.32 0 -0.8" rpy="0 -0.423827 0"/>
+      <mass value="2"/>
+      <inertia ixx="1.36626" ixy="0" ixz="0" iyy="1.47044" iyz="0" izz="0.224186"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.946 0 -2.15" rpy="0 -0.423827 0"/>
+      <geometry>
+        <mesh filename="$(find delivery_fellow_description)/dae/rocker.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.32 0 -0.8" rpy="0 -0.423827 0"/>
+      <geometry>
+        <box size="1 0.6 2.8"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name='link_leg_LB'>
+    <inertial>
+      <origin xyz="-0.32 0 -0.8" rpy="0 0.423827 0"/>
+      <mass value="2"/>
+      <inertia ixx="1.36626" ixy="0" ixz="0" iyy="1.47044" iyz="0" izz="0.224186"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.946 0 -2.15" rpy="0 0.423827 0"/>
+      <geometry>
+        <mesh filename="$(find delivery_fellow_description)/dae/rocker.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.32 0 -0.8" rpy="0 0.423827 0"/>
+      <geometry>
+        <box size="1 0.6 2.8"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name='link_wheel_R1'>
+    <inertial>
+      <origin xyz="0 -0.4 0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="0.166667" ixy="0" ixz="0" iyy="0.166667" iyz="0" izz="0.166667"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.4 -1" rpy="0 0 1.5708" />
+      <geometry>
+        <mesh filename="$(find delivery_fellow_description)/dae/wheel.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.4 0" rpy="0 1.5708 1.5708" />
+      <geometry>
+        <cylinder radius="1" length="0.7"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name='link_wheel_R2'>
+    <inertial>
+      <origin xyz="0 -0.4 0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="0.166667" ixy="0" ixz="0" iyy="0.166667" iyz="0" izz="0.166667"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.4 -1" rpy="0 0 1.5708" />
+      <geometry>
+        <mesh filename="$(find delivery_fellow_description)/dae/wheel.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.4 0" rpy="0 1.5708 1.5708" />
+      <geometry>
+        <cylinder radius="1" length="0.7"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name='link_wheel_R3'>
+    <inertial>
+      <origin xyz="0 -0.4 0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="0.166667" ixy="0" ixz="0" iyy="0.166667" iyz="0" izz="0.166667"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.4 -1" rpy="0 0 1.5708" />
+      <geometry>
+        <mesh filename="$(find delivery_fellow_description)/dae/wheel.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.4 0" rpy="0 1.5708 1.5708" />
+      <geometry>
+        <cylinder radius="1" length="0.7"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name='link_wheel_L1'>
+    <inertial>
+      <origin xyz="0 -0.4 0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="0.166667" ixy="0" ixz="0" iyy="0.166667" iyz="0" izz="0.166667"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.4 -1" rpy="0 0 1.5708" />
+      <geometry>
+        <mesh filename="$(find delivery_fellow_description)/dae/wheel.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.4 0" rpy="0 1.5708 1.5708" />
+      <geometry>
+        <cylinder radius="1" length="0.7"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name='link_wheel_L2'>
+    <inertial>
+      <origin xyz="0 -0.4 0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="0.166667" ixy="0" ixz="0" iyy="0.166667" iyz="0" izz="0.166667"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.4 -1" rpy="0 0 1.5708" />
+      <geometry>
+        <mesh filename="$(find delivery_fellow_description)/dae/wheel.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.4 0" rpy="0 1.5708 1.5708" />
+      <geometry>
+        <cylinder radius="1" length="0.7"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name='link_wheel_L3'>
+    <inertial>
+      <origin xyz="0 -0.4 0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="0.166667" ixy="0" ixz="0" iyy="0.166667" iyz="0" izz="0.166667"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.4 -1" rpy="0 0 1.5708" />
+      <geometry>
+        <mesh filename="$(find delivery_fellow_description)/dae/wheel.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.4 0" rpy="0 1.5708 1.5708" />
+      <geometry>
+        <cylinder radius="1" length="0.7"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_sensor_F">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.1"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.1"/>
+      </geometry>
+
+    </visual>
+    <inertial>
+      <mass value="1e-5" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+  <joint name="joint_sensor_F" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz="4 0 2.9" rpy="0 0 0"/>
+    <parent link="link_body"/>
+    <child link="link_sensor_F"/>
+  </joint>
+
+  <link name="link_camera_F">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2 0.2 0.2"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.2 0.2 0.2"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+
+    <inertial>
+      <mass value="1e-5" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+  <joint name="joint_camera_F" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz="4 0 3.2" rpy="0 0 0"/>
+    <parent link="link_body"/>
+    <child link="link_camera_F"/>
+  </joint>
+
+  <joint name='joint_body_leg_RF' type='revolute'>
+    <origin xyz="1.9 -3.4 2.9" rpy="0 -0 0"/>
+    <parent link="link_body"/>
+    <child link="link_leg_RF"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="2e250" velocity="2e250" lower="-1.5708" upper="1.5708" />
+  </joint>
+  <joint name='joint_body_leg_LF' type='revolute'>
+    <origin xyz="1.9 3.4 2.9" rpy="0 0 3.14159"/>
+    <parent link="link_body"/>
+    <child link="link_leg_LF"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="2e250" velocity="2e250" lower="-1.5708" upper="1.5708" />
+  </joint>
+
+  <joint name='joint_body_leg_RB' type='fixed'>
+    <origin xyz="-3.08 -3.4 2.9" rpy="0 0 3.14159"/>
+    <parent link="link_body"/>
+    <child link="link_leg_RB"/>
+  </joint>
+  <joint name='joint_body_leg_LB' type='fixed'>
+    <origin xyz="-3.08 3.4 2.9" rpy="0 0 0"/>
+    <parent link="link_body"/>
+    <child link="link_leg_LB"/>
+  </joint>
+
+  <joint name='joint_leg_wheel_R1' type='revolute'>
+    <origin xyz="1.9 -0.4 -1.9" rpy="0 0 0"/>
+    <parent link="link_leg_RF"/>
+    <child link="link_wheel_R1"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="2e250" velocity="2e250" lower="-2e251" upper="2e251" />
+  </joint>
+  <joint name='joint_leg_wheel_R2' type='revolute'>
+    <origin xyz="-1.9 -0.4 -1.9" rpy="0 0 0"/>
+    <parent link="link_leg_RF"/>
+    <child link="link_wheel_R2"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="2e250" velocity="2e250" lower="-2e251" upper="2e251" />
+  </joint>
+  <joint name='joint_leg_wheel_R3' type='revolute'>
+    <origin xyz="0.82 0.4 -1.9" rpy="0 0 3.14159"/>
+    <parent link="link_leg_RB"/>
+    <child link="link_wheel_R3"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="2e250" velocity="2e250" lower="-2e251" upper="2e251" />
+  </joint>
+  <joint name='joint_leg_wheel_L1' type='revolute'>
+    <origin xyz="1.9 -0.4 -1.9" rpy="0 0 0"/>
+    <parent link="link_leg_LF"/>
+    <child link="link_wheel_L1"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="2e250" velocity="2e250" lower="-2e251" upper="2e251" />
+  </joint>
+  <joint name='joint_leg_wheel_L2' type='revolute'>
+    <origin xyz="-1.9 -0.4 -1.9" rpy="0 0 0"/>
+    <parent link="link_leg_LF"/>
+    <child link="link_wheel_L2"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="2e250" velocity="2e250" lower="-2e251" upper="2e251" />
+  </joint>
+  <joint name='joint_leg_wheel_L3' type='revolute'>
+    <origin xyz="-0.82 0.4 -1.9" rpy="0 0 3.14159"/>
+    <parent link="link_leg_LB"/>
+    <child link="link_wheel_L3"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="2e250" velocity="2e250" lower="-2e251" upper="2e251" />
+  </joint>
+
+
+  <transmission name="trans_wheel_R1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_leg_wheel_R1">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_wheel_R1">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>4</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_wheel_R2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_leg_wheel_R2">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_wheel_R2">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>4</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_wheel_R3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_leg_wheel_R3">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_wheel_R3">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>4</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_wheel_L1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_leg_wheel_L1">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_wheel_L1">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>4</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_wheel_L2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_leg_wheel_L2">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_wheel_L2">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>4</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="trans_wheel_L3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_leg_wheel_L3">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_wheel_L3">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>4</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+</robot>

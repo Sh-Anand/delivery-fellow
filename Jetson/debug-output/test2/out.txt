@@ -1,0 +1,383 @@
+shashank@shashank-desktop:~/delivery-fellow/Jetson/src$ python3 ./Test2.py
+jetson.inference -- detectNet loading build-in network 'ssd-mobilenet-v2'
+
+detectNet -- loading detection network model from:
+          -- model        networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff
+          -- input_blob   'Input'
+          -- output_blob  'NMS'
+          -- output_count 'NMS_1'
+          -- class_labels networks/SSD-Mobilenet-v2/ssd_coco_labels.txt
+          -- threshold    0.500000
+          -- batch_size   1
+
+[TRT]    TensorRT version 7.1.3
+[TRT]    loading NVIDIA plugins...
+[TRT]    Registered plugin creator - ::GridAnchor_TRT version 1
+[TRT]    Registered plugin creator - ::NMS_TRT version 1
+[TRT]    Registered plugin creator - ::Reorg_TRT version 1
+[TRT]    Registered plugin creator - ::Region_TRT version 1
+[TRT]    Registered plugin creator - ::Clip_TRT version 1
+[TRT]    Registered plugin creator - ::LReLU_TRT version 1
+[TRT]    Registered plugin creator - ::PriorBox_TRT version 1
+[TRT]    Registered plugin creator - ::Normalize_TRT version 1
+[TRT]    Registered plugin creator - ::RPROI_TRT version 1
+[TRT]    Registered plugin creator - ::BatchedNMS_TRT version 1
+[TRT]    Could not register plugin creator -  ::FlattenConcat_TRT version 1
+[TRT]    Registered plugin creator - ::CropAndResize version 1
+[TRT]    Registered plugin creator - ::DetectionLayer_TRT version 1
+[TRT]    Registered plugin creator - ::Proposal version 1
+[TRT]    Registered plugin creator - ::ProposalLayer_TRT version 1
+[TRT]    Registered plugin creator - ::PyramidROIAlign_TRT version 1
+[TRT]    Registered plugin creator - ::ResizeNearest_TRT version 1
+[TRT]    Registered plugin creator - ::Split version 1
+[TRT]    Registered plugin creator - ::SpecialSlice_TRT version 1
+[TRT]    Registered plugin creator - ::InstanceNormalization_TRT version 1
+[TRT]    detected model format - UFF  (extension '.uff')
+[TRT]    desired precision specified for GPU: FASTEST
+[TRT]    requested fasted precision for device GPU without providing valid calibrator, disabling INT8
+[TRT]    native precisions detected for GPU:  FP32, FP16
+[TRT]    selecting fastest native precision for GPU:  FP16
+[TRT]    attempting to open engine cache file /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.1.1.7103.GPU.FP16.engine
+[TRT]    loading network plan from engine cache... /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff.1.1.7103.GPU.FP16.engine
+[TRT]    device GPU, loaded /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff
+[TRT]    Deserialize required 3064189 microseconds.
+[TRT]    
+[TRT]    CUDA engine context initialized on device GPU:
+[TRT]       -- layers       118
+[TRT]       -- maxBatchSize 1
+[TRT]       -- workspace    0
+[TRT]       -- deviceMemory 35448832
+[TRT]       -- bindings     3
+[TRT]       binding 0
+                -- index   0
+                -- name    'Input'
+                -- type    FP32
+                -- in/out  INPUT
+                -- # dims  3
+                -- dim #0  3 (SPATIAL)
+                -- dim #1  300 (SPATIAL)
+                -- dim #2  300 (SPATIAL)
+[TRT]       binding 1
+                -- index   1
+                -- name    'NMS'
+                -- type    FP32
+                -- in/out  OUTPUT
+                -- # dims  3
+                -- dim #0  1 (SPATIAL)
+                -- dim #1  100 (SPATIAL)
+                -- dim #2  7 (SPATIAL)
+[TRT]       binding 2
+                -- index   2
+                -- name    'NMS_1'
+                -- type    FP32
+                -- in/out  OUTPUT
+                -- # dims  3
+                -- dim #0  1 (SPATIAL)
+                -- dim #1  1 (SPATIAL)
+                -- dim #2  1 (SPATIAL)
+[TRT]    
+[TRT]    binding to input 0 Input  binding index:  0
+[TRT]    binding to input 0 Input  dims (b=1 c=3 h=300 w=300) size=1080000
+[TRT]    binding to output 0 NMS  binding index:  1
+[TRT]    binding to output 0 NMS  dims (b=1 c=1 h=100 w=7) size=2800
+[TRT]    binding to output 1 NMS_1  binding index:  2
+[TRT]    binding to output 1 NMS_1  dims (b=1 c=1 h=1 w=1) size=4
+[TRT]    
+[TRT]    device GPU, /usr/local/bin/networks/SSD-Mobilenet-v2/ssd_mobilenet_v2_coco.uff initialized.
+[TRT]    W = 7  H = 100  C = 1
+[TRT]    detectNet -- maximum bounding boxes:  100
+[TRT]    detectNet -- loaded 91 class info entries
+[TRT]    detectNet -- number of object classes:  91
+[gstreamer] initialized gstreamer, version 1.14.5.0
+[gstreamer] gstDecoder -- creating decoder for ../media/test-videos/vid-wii-2.mp4
+Opening in BLOCKING MODE 
+NvMMLiteOpen : Block : BlockType = 261 
+NVMEDIA: Reading vendor.tegra.display-size : status: 6 
+NvMMLiteBlockCreate : Block : BlockType = 261 
+[gstreamer] gstDecoder -- discovered video resolution: 960x720  (framerate 23.976025 Hz)
+[gstreamer] gstDecoder -- discovered video caps:  video/x-h264, stream-format=(string)byte-stream, alignment=(string)au, level=(string)4, profile=(string)main, width=(int)960, height=(int)720, framerate=(fraction)24000/1001, pixel-aspect-ratio=(fraction)4/3, interlace-mode=(string)progressive, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true
+[gstreamer] gstDecoder -- pipeline string:
+[gstreamer] filesrc location=../media/test-videos/vid-wii-2.mp4 ! qtdemux ! queue ! h264parse ! omxh264dec ! video/x-raw ! appsink name=mysink
+[video]  created gstDecoder from file:///home/shashank/delivery-fellow/Jetson/src/../media/test-videos/vid-wii-2.mp4
+------------------------------------------------
+gstDecoder video options:
+------------------------------------------------
+  -- URI: file:///home/shashank/delivery-fellow/Jetson/src/../media/test-videos/vid-wii-2.mp4
+     - protocol:  file
+     - location:  ../media/test-videos/vid-wii-2.mp4
+     - extension: mp4
+  -- deviceType: file
+  -- ioType:     input
+  -- codec:      h264
+  -- width:      960
+  -- height:     720
+  -- frameRate:  23.976025
+  -- bitRate:    0
+  -- numBuffers: 4
+  -- zeroCopy:   true
+  -- flipMethod: none
+  -- loop:       0
+------------------------------------------------
+[gstreamer] opening gstDecoder for streaming, transitioning pipeline to GST_STATE_PLAYING
+[gstreamer] gstreamer changed state from NULL to READY ==> mysink
+[gstreamer] gstreamer changed state from NULL to READY ==> capsfilter1
+[gstreamer] gstreamer changed state from NULL to READY ==> omxh264dec-omxh264dec0
+[gstreamer] gstreamer changed state from NULL to READY ==> h264parse1
+[gstreamer] gstreamer changed state from NULL to READY ==> queue0
+[gstreamer] gstreamer changed state from NULL to READY ==> qtdemux1
+[gstreamer] gstreamer changed state from NULL to READY ==> filesrc0
+[gstreamer] gstreamer changed state from NULL to READY ==> pipeline0
+[gstreamer] gstreamer changed state from READY to PAUSED ==> capsfilter1
+[gstreamer] gstreamer changed state from READY to PAUSED ==> omxh264dec-omxh264dec0
+[gstreamer] gstreamer changed state from READY to PAUSED ==> h264parse1
+[gstreamer] gstreamer stream status CREATE ==> src
+[gstreamer] gstreamer changed state from READY to PAUSED ==> queue0
+[gstreamer] gstreamer stream status ENTER ==> src
+[gstreamer] gstreamer stream status CREATE ==> sink
+[gstreamer] gstreamer changed state from READY to PAUSED ==> qtdemux1
+[gstreamer] gstreamer changed state from READY to PAUSED ==> filesrc0
+[gstreamer] gstreamer stream status ENTER ==> sink
+
+(python3:28505): GStreamer-CRITICAL **: 02:58:09.811: gst_caps_is_empty: assertion 'GST_IS_CAPS (caps)' failed
+
+(python3:28505): GStreamer-CRITICAL **: 02:58:09.811: gst_caps_truncate: assertion 'GST_IS_CAPS (caps)' failed
+
+(python3:28505): GStreamer-CRITICAL **: 02:58:09.812: gst_caps_fixate: assertion 'GST_IS_CAPS (caps)' failed
+
+(python3:28505): GStreamer-CRITICAL **: 02:58:09.812: gst_caps_get_structure: assertion 'GST_IS_CAPS (caps)' failed
+
+(python3:28505): GStreamer-CRITICAL **: 02:58:09.812: gst_structure_get_string: assertion 'structure != NULL' failed
+
+(python3:28505): GStreamer-CRITICAL **: 02:58:09.812: gst_mini_object_unref: assertion 'mini_object != NULL' failed
+NvMMLiteOpen : Block : BlockType = 261 
+NVMEDIA: Reading vendor.tegra.display-size : status: 6 
+NvMMLiteBlockCreate : Block : BlockType = 261 
+Allocating new output: 960x720 (x 11), ThumbnailMode = 0
+OPENMAX: HandleNewStreamFormat: 3605: Send OMX_EventPortSettingsChanged: nFrameWidth = 960, nFrameHeight = 720 
+[gstreamer] gstDecoder -- onPreroll()
+[gstreamer] gstreamer message stream-start ==> pipeline0
+[gstreamer] gstreamer stream status CREATE ==> src
+[gstreamer] gstreamer stream status ENTER ==> src
+[gstreamer] gstreamer message duration-changed ==> h264parse1
+[gstreamer] gstreamer mysink taglist, video-codec=(string)"H.264\ /\ AVC", bitrate=(uint)1577640;
+[gstreamer] gstreamer mysink taglist, datetime=(datetime)2020-12-08T15:13:43Z, container-format=(string)"ISO\ MP4/M4A";
+[gstreamer] gstreamer mysink taglist, video-codec=(string)"H.264\ \(Main\ Profile\)", bitrate=(uint)1577640;
+[gstreamer] gstDecoder recieve caps:  video/x-raw, format=(string)NV12, width=(int)960, height=(int)720, interlace-mode=(string)progressive, multiview-mode=(string)mono, multiview-flags=(GstVideoMultiviewFlagsSet)0:ffffffff:/right-view-first/left-flipped/left-flopped/right-flipped/right-flopped/half-aspect/mixed-mono, pixel-aspect-ratio=(fraction)4/3, chroma-site=(string)mpeg2, colorimetry=(string)bt709, framerate=(fraction)24000/1001
+[gstreamer] gstDecoder -- recieved first frame, codec=h264 format=nv12 width=960 height=720 size=1036800
+RingBuffer -- allocated 4 buffers (1036800 bytes each, 4147200 bytes total)
+[gstreamer] gstreamer changed state from READY to PAUSED ==> mysink
+[gstreamer] gstreamer changed state from READY to PAUSED ==> pipeline0
+[gstreamer] gstreamer message async-done ==> pipeline0
+[gstreamer] gstreamer message new-clock ==> pipeline0
+[gstreamer] gstreamer changed state from PAUSED to PLAYING ==> mysink
+[gstreamer] gstreamer changed state from PAUSED to PLAYING ==> capsfilter1
+[gstreamer] gstreamer changed state from PAUSED to PLAYING ==> omxh264dec-omxh264dec0
+[gstreamer] gstreamer changed state from PAUSED to PLAYING ==> h264parse1
+[gstreamer] gstreamer changed state from PAUSED to PLAYING ==> queue0
+[gstreamer] gstreamer changed state from PAUSED to PLAYING ==> qtdemux1
+[gstreamer] gstreamer changed state from PAUSED to PLAYING ==> filesrc0
+[gstreamer] gstreamer changed state from PAUSED to PLAYING ==> pipeline0
+RingBuffer -- allocated 4 buffers (2073600 bytes each, 8294400 bytes total)
+[gstreamer] gstreamer mysink taglist, video-codec=(string)"H.264\ \(Main\ Profile\)", bitrate=(uint)1577640, minimum-bitrate=(uint)3044379, maximum-bitrate=(uint)3044379;
+[gstreamer] gstreamer mysink taglist, video-codec=(string)"H.264\ \(Main\ Profile\)", bitrate=(uint)1577640, minimum-bitrate=(uint)1069138, maximum-bitrate=(uint)3044379;
+[gstreamer] gstreamer mysink taglist, video-codec=(string)"H.264\ \(Main\ Profile\)", bitrate=(uint)1577640, minimum-bitrate=(uint)742489, maximum-bitrate=(uint)3044379;
+[gstreamer] gstreamer mysink taglist, video-codec=(string)"H.264\ \(Main\ Profile\)", bitrate=(uint)1577640, minimum-bitrate=(uint)742489, maximum-bitrate=(uint)3137023;
+ranks:
+[0.6925207756232687, 1.4527845036319613]
+\-> 0 steer: ((-17.08341368938987, 7.609703287796171), 0.1377304642288773)
+[gstreamer] gstreamer mysink taglist, video-codec=(string)"H.264\ \(Main\ Profile\)", bitrate=(uint)1577640, minimum-bitrate=(uint)656559, maximum-bitrate=(uint)3137023;
+\-> 1 steer: ((-19.221770389555715, 6.576367594118333), 0.16915843822337964)
+\-> 2 steer: ((-19.299127684311618, 6.897381208173378), 0.1660191062644676)
+[gstreamer] gstreamer mysink taglist, video-codec=(string)"H.264\ \(Main\ Profile\)", bitrate=(uint)1577640, minimum-bitrate=(uint)656559, maximum-bitrate=(uint)3406321;
+\-> 3 steer: ((-19.791961607171665, 6.80408946549858), 0.16355419017650463)
+\-> 4 steer: ((-20.571591571953444, 6.47285921671957), 0.16278932924623843)
+\-> 5 steer: ((-20.844020815851927, 6.245133904236348), 0.15897173846209492)
+\-> 6 steer: ((-21.598882793199223, 5.538895694668104), 0.14950497097439236)
+\-> 7 steer: ((-21.72537888136686, 5.611351558847238), 0.15029553448712385)
+\-> 8 steer: ((-21.828869474816468, 5.5582174878560755), 0.1507953785083912)
+\-> 9 steer: ((-21.828869474816468, 5.649998586326148), 0.1497680777090567)
+\-> 10 steer: ((-21.796288183403032, 5.587201898189512), 0.14895122386791088)
+\-> 11 steer: ((-21.41419962154733, 6.3210411946964244), 0.1594693332248264)
+ranks:
+[0.37720033528918695, 2.177971375233354]
+\-> 12 steer: ((-21.460744323566523, 5.798667999129877), 0.16194619637948496)
+\-> 13 steer: ((-22.40384548779998, 5.393983966309834), 0.163622888635706)
+\-> 14 steer: ((-22.55621422433002, 5.562305518186846), 0.16400247079354746)
+\-> 15 steer: ((-22.557169942211488, 5.645167277753411), 0.16658958152488426)
+\-> 16 steer: ((-22.709253204569134, 6.031214296876922), 0.16754724573206017)
+\-> 17 steer: ((-22.957733647788675, 5.761098036881218), 0.170074383770978)
+\-> 18 steer: ((-23.023851948497004, 5.867878903206388), 0.17694835521556712)
+\-> 19 steer: ((-22.887221527209732, 5.962202976772789), 0.17672335024233218)
+\-> 20 steer: ((-22.410814781182324, 5.510207219190262), 0.17459630895543982)
+\-> 21 steer: ((-21.97547908021666, 5.6792720493092395), 0.17303470187717013)
+\-> 22 steer: ((-20.89603917482858, 6.003606327732296), 0.17418764467592593)
+\-> 23 steer: ((-20.327908336022013, 6.300339519216676), 0.17130295364945022)
+\-> 24 steer: ((-19.896687186714853, 6.307238930675604), 0.16872944019458913)
+\-> 25 steer: ((-19.125950362998875, 6.440017329954484), 0.17026371708622684)
+\-> 26 steer: ((-19.106103702057883, 6.652278325681383), 0.1657570959020544)
+\-> 27 steer: ((-19.190976414699822, 6.441803262396968), 0.16823585792824075)
+\-> 28 steer: ((-18.93018955226641, 6.590169858139154), 0.16217052318431713)
+\-> 29 steer: ((-18.825457766762955, 6.472855775616596), 0.1658380126953125)
+\-> 30 steer: ((-18.108781062952197, 6.377926067927107), 0.14383371988932292)
+ranks:
+[0.8310249307479224, 1.7756255044390639]
+\-> 31 steer: ((-17.91904003368089, 6.462460203538079), 0.14138274016203703)
+ranks:
+[0.6845052893590542, 1.1702986279257466]
+\-> 32 steer: ((-15.72745481228589, 8.399821823410697), 0.16146704779730903)
+\-> 33 steer: ((-15.426279560420351, 8.994547650067215), 0.15003986499927663)
+\-> 34 steer: ((-16.473944949230003, 9.208594578236609), 0.14277017098885994)
+\-> 35 steer: ((-16.73268384477457, 8.913936371844368), 0.13609923186125578)
+\-> 36 steer: ((-16.799764069324635, 8.778680378425625), 0.12609272144458913)
+\-> 37 steer: ((-16.613852117539434, 9.111985612296774), 0.1245750257703993)
+\-> 38 steer: ((-16.958835242945437, 9.30037567670668), 0.12259576868127893)
+\-> 39 steer: ((-17.033586034388264, 9.290713059561217), 0.12145180031105324)
+\-> 40 steer: ((-17.11791262252651, 9.459777889680185), 0.12214161060474538)
+\-> 41 steer: ((-17.44373174262114, 9.464612639355895), 0.1226915599681713)
+\-> 42 steer: ((-16.776764780566882, 10.288491836229035), 0.13695921721281828)
+[gstreamer] gstreamer mysink taglist, video-codec=(string)"H.264\ \(Main\ Profile\)", bitrate=(uint)1577640, minimum-bitrate=(uint)656559, maximum-bitrate=(uint)3450437;
+\-> 43 steer: ((-17.21565649676682, 10.102235255661785), 0.14647026909722222)
+ranks:
+[0.8089607965152458, 1.2352032938754502]
+\-> 44 steer: ((-13.049024419690662, 11.814696708591208), 0.12345256664134838)
+ranks:
+[0.6564551422319475, 1.4223194748358863]
+\-> 45 steer: ((-11.435276158963296, 12.96645107884564), 0.09454983746563947)
+\-> 46 steer: ((-12.728002506884142, 13.023205190163383), 0.09785645661530672)
+[gstreamer] gstreamer mysink taglist, video-codec=(string)"H.264\ \(Main\ Profile\)", bitrate=(uint)1577640, minimum-bitrate=(uint)656559, maximum-bitrate=(uint)10721886;
+\-> 47 steer: ((-13.274226305940328, 12.97913842550352), 0.09955289487485533)
+\-> 48 steer: ((-13.463967335211649, 12.711344910013947), 0.10394411440248842)
+\-> 49 steer: ((-13.700662659879923, 12.447474251912482), 0.1031553480360243)
+\-> 50 steer: ((-14.286654252341316, 12.149798198213764), 0.09717077184606482)
+\-> 51 steer: ((-14.87252793155759, 12.040804702677585), 0.10104163275824653)
+\-> 52 steer: ((-15.184569819854538, 12.14647409274278), 0.10488216824001736)
+\-> 53 steer: ((-14.764960022211097, 12.71647215344227), 0.11086422390407986)
+\-> 54 steer: ((-14.930621925637812, 13.105929305611069), 0.11693604645905671)
+\-> 55 steer: ((-14.888942696469696, 12.873806263529584), 0.12099969934534144)
+\-> 56 steer: ((-14.837309107029728, 12.80002213360324), 0.12241803204571759)
+\-> 57 steer: ((-14.956972432940944, 12.768219459935708), 0.12047021936487269)
+\-> 58 steer: ((-14.653314796967718, 12.664243092532756), 0.11627558955439815)
+\-> 59 steer: ((-14.95026999585018, 12.516007258703501), 0.11483115867332176)
+\-> 60 steer: ((-14.643261141331571, 12.862326744014876), 0.12207009774667245)
+\-> 61 steer: ((-15.05520037208226, 12.79936832403856), 0.12134971336082176)
+ranks:
+[1.2445550715619167, 1.120099564405725]
+\-> 62 steer: ((15.637096030765958, 4.702828111068024), 0.1775884218569155)
+ranks:
+[0.87527352297593, 1.2445550715619167]
+\-> 63 steer: ((-15.034596583988426, 12.067273666738458), 0.10998746518735532)
+\-> 64 steer: ((-16.542942815503263, 10.998374173844653), 0.1090267492223669)
+\-> 65 steer: ((-16.454780943918628, 11.246188645478606), 0.10390351472077547)
+\-> 66 steer: ((-16.443275093579487, 10.827089832308726), 0.10770732738353588)
+\-> 67 steer: ((-16.751847850085944, 11.069450155732001), 0.11108252631293403)
+\-> 68 steer: ((-17.06807876156462, 11.470744702124593), 0.10799467863859953)
+\-> 69 steer: ((-16.92050723232269, 11.513262970447032), 0.11235130027488426)
+\-> 70 steer: ((-16.748012566639556, 11.358499364279833), 0.11586746780960648)
+\-> 71 steer: ((-16.87642629653038, 11.439007409413525), 0.11450251826533565)
+\-> 72 steer: ((-15.950720438931565, 10.78205267661075), 0.13273526792173032)
+\-> 73 steer: ((-15.938258870710957, 10.841948514941961), 0.1367260064019097)
+\-> 74 steer: ((-16.404947082956753, 10.393380095919582), 0.13787669994212962)
+\-> 75 steer: ((-16.044635235685764, 10.15620895577813), 0.15057860197844328)
+\-> 76 steer: ((-18.15669107623062, 10.66001051860462), 0.129382165979456)
+\-> 77 steer: ((-18.333449884680263, 10.702173875382773), 0.129382165979456)
+\-> 78 steer: ((-20.707675868737034, 10.550566238579094), 0.11977018003110533)
+\-> 79 steer: ((-20.550516130879153, 10.67560903837684), 0.1253848718713831)
+\-> 80 steer: ((-20.470024826187295, 10.659876315588706), 0.12264074254918982)
+\-> 81 steer: ((-20.412520398332642, 10.676827188828943), 0.1202472828052662)
+\-> 82 steer: ((-18.632005573250634, 11.09170376865214), 0.12820839210792825)
+\-> 83 steer: ((-18.490180763218014, 11.042692139021472), 0.1321369199399595)
+ranks:
+[1.039387308533917, 1.5738498789346247, 0.7467330429371499]
+\-> 84 steer: ((-17.899876028369516, 10.913698953011828), 0.13995716236255787)
+\-> 85 steer: ((-17.85004216740763, 11.548699448853034), 0.12999376085069445)
+\-> 86 steer: ((-17.42076348366473, 10.648847580563334), 0.1398855138708044)
+\-> 87 steer: ((-17.19665384642244, 10.917914304152573), 0.13765256528501157)
+\-> 88 steer: ((-16.9878605191246, 11.514880288843885), 0.13241923014322918)
+\-> 89 steer: ((-16.71734891694932, 12.082627868199678), 0.12096840187355325)
+\-> 90 steer: ((-16.290912563009726, 11.48589587851045), 0.1241876220703125)
+\-> 91 steer: ((-15.35274513719029, 12.164897758055044), 0.1247875072337963)
+\-> 92 steer: ((-15.990010373396034, 11.827845163047348), 0.12231615984881365)
+\-> 93 steer: ((-16.17496040133951, 12.273653817486164), 0.11438391791449652)
+\-> 94 steer: ((-16.422199652505192, 11.91853543187529), 0.1153481603551794)
+\-> 95 steer: ((-17.390093628014213, 11.687940239513393), 0.12807761863425926)
+\-> 96 steer: ((-18.532344057287137, 11.596578955605908), 0.1396392935293692)
+\-> 97 steer: ((-19.423699924795798, 11.989786910014217), 0.1513958853262442)
+\-> 98 steer: ((-18.86104894890696, 11.50328721293111), 0.14505671748408563)
+\-> 99 steer: ((-18.52084441290826, 10.62728907044355), 0.13727397777416087)
+\-> 100 steer: ((-18.838986760149858, 10.96481309655841), 0.14369335033275463)
+\-> 101 steer: ((-18.842822043596247, 11.322877066313348), 0.14374950267650463)
+\-> 102 steer: ((-18.776858891894648, 12.231304163209346), 0.1373905775282118)
+ranks:
+[0.6925207756232687, 2.2645393721049922, 0.3602676273803397]
+\-> 103 steer: ((-19.42232840757629, 12.10364612515285), 0.13920029251663774)
+ranks:
+[0.5661348430262481, 0.9778692743180648]
+\-> 104 steer: ((-24.526985173385683, 8.234291006044007), 0.19406005859375)
+ranks:
+[1.1837364899639733, 0.9685230024213075]
+\-> 105 steer: ((20.21086082236428, 3.7054932366835933), 0.23202643500434028)
+ranks:
+[0.9695290858725761, 1.8046048537647792]
+\-> 106 steer: ((-25.958129259151345, 8.126563836401525), 0.13250587745949075)
+ranks:
+[0.8234688625836336, 1.8046048537647792, 0.6222775357809583]
+\-> 107 steer: ((-22.26393831949056, 8.278247655408757), 0.13316190366391784)
+[gstreamer] gstreamer mysink taglist, video-codec=(string)"H.264\ \(Main\ Profile\)", bitrate=(uint)1577640, minimum-bitrate=(uint)656559, maximum-bitrate=(uint)11018997;
+ranks:
+[1.4931396287328491, 0.9685230024213075]
+\-> 108 steer: ((-16.361828071006165, 7.279526016526601), 0.16361217357494212)
+ranks:
+[1.2106537530266344, 0.8234688625836336]
+\-> 109 steer: ((-21.485381985835346, 3.609063208098302), 0.17603442156756366)
+ranks:
+[2.0535158680771626, 1.120099564405725]
+\-> 110 steer: ((-24.965336971042188, 1.382968961151294), 0.22854155363859954)
+ranks:
+[2.8624766645924082, 1.029336078229542]
+\-> 111 steer: ((-18.32372449687684, 0.08917274241726818), 0.27436772099247686)
+\-> 112 steer: ((-16.68026830434069, 0.38272979585846456), 0.2904787642867477)
+\-> 113 steer: ((-16.628249945364033, 0.35881757130580794), 0.28107758698640045)
+\-> 114 steer: ((-17.583794059937297, 0.5514298690623988), 0.271015941478588)
+\-> 115 steer: ((-17.86853592900993, 0.652546679895599), 0.27521552191840276)
+\-> 116 steer: ((-18.08757529671226, 0.18758828741742317), 0.2818914794921875)
+\-> 117 steer: ((-19.090352974894593, 0.4055856017987155), 0.2636371753833912)
+\-> 118 steer: ((-20.143101045164737, 0.6841119174580635), 0.2510387279369213)
+\-> 119 steer: ((-20.832384640347126, 1.0202939134138365), 0.24736705638744214)
+\-> 120 steer: ((-21.430620592419704, 1.4892336620306532), 0.24120255081741898)
+\-> 121 steer: ((-21.501815368628268, 1.4517118752235978), 0.24058731644241899)
+\-> 122 steer: ((-21.64144947468585, 1.6160073366233303), 0.24037134241174768)
+\-> 123 steer: ((-21.709901216455407, 2.0364825909820317), 0.2392147488064236)
+\-> 124 steer: ((-21.82215462580517, 3.036952310173982), 0.23804918077256945)
+\-> 125 steer: ((-23.018638941870854, 3.0406342903540624), 0.22195104528356482)
+\-> 126 steer: ((-24.51630471576235, 3.459419963153486), 0.21471971299913195)
+\-> 127 steer: ((-25.102228042660776, 3.4537318199407143), 0.22295875831886575)
+ranks:
+[2.340597255851493, 0.7720020586721564]
+\-> 128 steer: ((-24.68332572448802, 3.681525954483385), 0.2094547073929398)
+ranks:
+[0.37336652146857496, 2.138821630347054]
+\-> 129 steer: ((-19.65642343489177, 6.969709751542547), 0.1718223176179109)
+\-> 130 steer: ((-18.538655518880944, 7.97190346332349), 0.15382779721860532)
+\-> 131 steer: ((-18.445416606535343, 8.055501722235352), 0.15382779721860532)
+\-> 132 steer: ((-18.340553110827077, 8.149522613771824), 0.15382779721860532)
+ranks:
+[0.7263922518159807, 1.4312383322962041]
+\-> 133 steer: ((-21.30564496451803, 8.32461307685393), 0.12968937626591434)
+\-> 134 steer: ((-20.872499967527403, 9.508094416510508), 0.1357517835828993)
+\-> 135 steer: ((-20.78625573766597, 9.47037992793702), 0.1304515697337963)
+\-> 136 steer: ((-20.779240851764957, 9.46731232753543), 0.1304515697337963)
+\-> 137 steer: ((-20.771977347980446, 9.464136006859547), 0.1304515697337963)
+\-> 138 steer: ((-18.398183608187015, 10.10591379473889), 0.14210575810185186)
+\-> 139 steer: ((-18.66266922294088, 10.073715394229573), 0.14220087122034145)
+[gstreamer] gstDecoder -- end of stream (EOS)
+\-> 140 steer: ((-18.685150384167724, 10.070978544311407), 0.14220087122034145)
+[gstreamer] gstDecoder -- end of stream (EOS) has been reached, stream has been closed
+Traceback (most recent call last):
+  File "./Test2.py", line 10, in <module>
+    print('\\->', i, 'steer:', af.getSteering(i))
+  File "/home/shashank/delivery-fellow/Jetson/src/AutoFollow.py", line 47, in getSteering
+    img = self.camera.Capture()
+  File "/home/shashank/delivery-fellow/Jetson/src/Camera.py", line 25, in Capture
+    return self.cam.Capture()
+Exception: jetson.utils -- videoSource failed to capture image
+[gstreamer] gstDecoder -- stopping pipeline, transitioning to GST_STATE_NULL

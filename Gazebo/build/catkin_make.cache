@@ -1,0 +1,2 @@
+delivery_fellow_control:delivery_fellow_description:delivery_fellow_gazebo:diff_drive
+-DCATKIN_DEVEL_PREFIX=/home/shashank/ARMS/delivery-fellow/Gazebo/devel -DCMAKE_INSTALL_PREFIX=/home/shashank/ARMS/delivery-fellow/Gazebo/install -G Unix Makefiles

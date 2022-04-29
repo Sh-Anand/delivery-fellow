@@ -1,0 +1,28 @@
+<launch>
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find delivery_fellow_control)/config/delivery_fellow_control.yaml" command="load"/>
+
+  <!-- load the controllers -->
+  <node name="controller_spawner"
+    pkg="controller_manager"
+    type="spawner" respawn="false"
+    output="screen" ns="/delivery_fellow"
+    args="joint_state_controller
+      wheel_R1_effort_controller
+      wheel_R2_effort_controller
+      wheel_R3_effort_controller
+      wheel_L1_effort_controller
+      wheel_L2_effort_controller
+      wheel_L3_effort_controller"
+  />
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+    <param name="robot_description" command="$(find xacro)/xacro '$(find delivery_fellow_description)/urdf/delivery_fellow.xacro'" />
+    <remap from="/joint_states" to="/delivery_fellow/joint_states" />
+  </node>
+
+  <node name="diff_drive_controller" pkg="delivery_fellow_control" type="diff_drive_controller"></node>
+
+</launch>

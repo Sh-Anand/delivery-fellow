@@ -1,0 +1,8 @@
+prefix=/home/shashank/ARMS/delivery-fellow/Gazebo/install
+
+Name: delivery_fellow_control
+Description: Description of delivery_fellow_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

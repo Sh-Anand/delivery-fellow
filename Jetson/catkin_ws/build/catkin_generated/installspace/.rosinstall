@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/shashank/ARMS/delivery-fellow/Jetson/catkin_ws/install/setup.sh

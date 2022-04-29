@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13b287cc-cccc-41a3-8ecd-6ce920ce39a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/sweater/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/sweater/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/sweater/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/sweater/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/sweater/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/sweater/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/sweater/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/sweater/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/tshirt/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/tshirt/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/tshirt/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/tshirt/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/tshirt/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/tshirt/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/tshirt/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/target/tshirt/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/sweater/0.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/sweater/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/sweater/2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/sweater/3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/sweater/4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/sweater/5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/sweater/6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/sweater/7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/tshirt/0.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/tshirt/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/tshirt/2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/tshirt/3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/tshirt/4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/tshirt/5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/tshirt/6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/test-imgs/tshirt/7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testcv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catkin_ws/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/AutoFollow.py" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/AutoFollow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/Camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/Camera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/Constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/Constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/DiffDriveController.py" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/DiffDriveController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/JoystickControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/JoystickControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/Motor.py" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/Motor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/MotorControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/MotorControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/Test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/delivery_fellow/src/Test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-0-s0.4155124653739612.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-0-s0.4155124653739612.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-0-s2.177971375233354.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-0-s2.177971375233354.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-1-s0.20955574182732606.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-1-s0.20955574182732606.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-1-s2.4268823895457374.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-1-s2.4268823895457374.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-2-s0.7720020586721564.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-2-s0.7720020586721564.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-2-s2.179176755447942.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-2-s2.179176755447942.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-20-s0.42523033309709424.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-20-s0.42523033309709424.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-20-s0.6845052893590542.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-20-s0.6845052893590542.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-20-s1.0940919037199124.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-20-s1.0940919037199124.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-28-s0.6925207756232687.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-28-s0.6925207756232687.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-29-s1.0088781275221954.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-29-s1.0088781275221954.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-29-s1.383067896060352.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-29-s1.383067896060352.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-39-s1.120099564405725.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-39-s1.120099564405725.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-39-s2.3674729799279466.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-39-s2.3674729799279466.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-59-s1.6958424507658643.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-59-s1.6958424507658643.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-59-s2.24019912881145.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-59-s2.24019912881145.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-63-s1.4174344436569808.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-63-s1.4174344436569808.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-63-s1.7352703793381759.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-63-s1.7352703793381759.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-64-s0.847457627118644.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-64-s0.847457627118644.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/img-64-s1.694915254237288.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/img-64-s1.694915254237288.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-54.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-55.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-56.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-57.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-58.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-58.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-59.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-59.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-61.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-61.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-62.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-62.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-68.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-68.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-69.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-69.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-71.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-71.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-72.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-72.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test1/output-9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test1/output-9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-0-s0.6925207756232687.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-0-s0.6925207756232687.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-0-s1.4527845036319613.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-0-s1.4527845036319613.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-103-s0.3602676273803397.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-103-s0.3602676273803397.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-103-s0.6925207756232687.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-103-s0.6925207756232687.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-103-s2.2645393721049922.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-103-s2.2645393721049922.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-104-s0.5661348430262481.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-104-s0.5661348430262481.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-104-s0.9778692743180648.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-104-s0.9778692743180648.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-105-s0.9685230024213075.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-105-s0.9685230024213075.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-105-s1.1837364899639733.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-105-s1.1837364899639733.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-106-s0.9695290858725761.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-106-s0.9695290858725761.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-106-s1.8046048537647792.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-106-s1.8046048537647792.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-107-s0.6222775357809583.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-107-s0.6222775357809583.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-107-s0.8234688625836336.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-107-s0.8234688625836336.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-107-s1.8046048537647792.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-107-s1.8046048537647792.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-108-s0.9685230024213075.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-108-s0.9685230024213075.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-108-s1.4931396287328491.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-108-s1.4931396287328491.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-109-s0.8234688625836336.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-109-s0.8234688625836336.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-109-s1.2106537530266344.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-109-s1.2106537530266344.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-110-s1.120099564405725.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-110-s1.120099564405725.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-110-s2.0535158680771626.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-110-s2.0535158680771626.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-111-s1.029336078229542.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-111-s1.029336078229542.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-111-s2.8624766645924082.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-111-s2.8624766645924082.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-12-s0.37720033528918695.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-12-s0.37720033528918695.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-12-s2.177971375233354.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-12-s2.177971375233354.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-128-s0.7720020586721564.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-128-s0.7720020586721564.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-128-s2.340597255851493.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-128-s2.340597255851493.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-129-s0.37336652146857496.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-129-s0.37336652146857496.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-129-s2.138821630347054.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-129-s2.138821630347054.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-133-s0.7263922518159807.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-133-s0.7263922518159807.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-133-s1.4312383322962041.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-133-s1.4312383322962041.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-31-s0.8310249307479224.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-31-s0.8310249307479224.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-31-s1.7756255044390639.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-31-s1.7756255044390639.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-32-s0.6845052893590542.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-32-s0.6845052893590542.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-32-s1.1702986279257466.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-32-s1.1702986279257466.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-44-s0.8089607965152458.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-44-s0.8089607965152458.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-44-s1.2352032938754502.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-44-s1.2352032938754502.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-45-s0.6564551422319475.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-45-s0.6564551422319475.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-45-s1.4223194748358863.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-45-s1.4223194748358863.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-62-s1.120099564405725.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-62-s1.120099564405725.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-62-s1.2445550715619167.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-62-s1.2445550715619167.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-63-s0.87527352297593.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-63-s0.87527352297593.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-63-s1.2445550715619167.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-63-s1.2445550715619167.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-84-s0.7467330429371499.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-84-s0.7467330429371499.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-84-s1.039387308533917.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-84-s1.039387308533917.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/img-84-s1.5738498789346247.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/img-84-s1.5738498789346247.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-100.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-100.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-101.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-101.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-102.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-102.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-103.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-103.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-104.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-104.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-105.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-105.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-106.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-106.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-107.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-107.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-108.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-108.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-109.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-109.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-110.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-110.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-111.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-111.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-112.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-112.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-113.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-113.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-114.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-114.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-115.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-115.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-116.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-116.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-117.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-117.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-118.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-118.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-119.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-119.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-120.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-120.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-121.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-121.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-122.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-122.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-123.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-123.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-124.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-124.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-125.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-125.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-126.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-126.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-127.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-127.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-128.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-128.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-129.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-129.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-130.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-130.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-131.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-131.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-132.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-132.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-133.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-133.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-134.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-134.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-135.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-135.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-136.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-136.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-137.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-137.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-138.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-138.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-139.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-139.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-140.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-140.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-54.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-55.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-56.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-57.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-58.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-58.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-59.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-59.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-61.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-61.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-62.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-62.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-68.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-68.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-69.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-69.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-71.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-71.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-72.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-72.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-73.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-73.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-74.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-74.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-75.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-75.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-76.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-76.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-77.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-77.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-78.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-78.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-79.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-79.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-80.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-80.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-81.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-81.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-82.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-82.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-83.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-83.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-84.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-84.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-85.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-85.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-86.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-86.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-87.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-87.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-88.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-88.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-89.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-89.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-90.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-90.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-91.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-91.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-92.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-92.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-93.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-93.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-94.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-94.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-95.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-95.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-96.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-96.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-97.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-97.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-98.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-98.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-output/test2/output-99.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/debug-output/test2/output-99.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutoFollowController.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutoFollowController.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1nJDPb0IY9mPLOeRo2VccoE7Pk9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13b287cc-cccc-41a3-8ecd-6ce920ce39a6" name="Default Changelist" comment="" />
+      <created>1611099276932</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611099276932</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

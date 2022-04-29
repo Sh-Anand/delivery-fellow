@@ -1,0 +1,86 @@
+#! /usr/bin/python
+from __future__ import division
+
+import rospy
+from geometry_msgs.msg import Twist
+from std_msgs.msg import Int32
+from std_msgs.msg import Float64
+
+from diff_drive import controller
+
+class ControllerNode:
+
+    def __init__(self):
+        self.controller = controller.Controller()
+        self.linearVelocity = 0.0
+        self.angularVelocity = 0.0
+
+    def main(self):
+        # self.leftPub = rospy.Publisher('lwheel_desired_rate',
+        #                                Int32, queue_size=1)
+        # self.rightPub = rospy.Publisher('rwheel_desired_rate',
+        #                                 Int32, queue_size=1)
+
+        self.pub_R1 = rospy.Publisher('delivery_fellow/wheel_R1_effort_controller/command', Float64, queue_size=1)
+        self.pub_R2 = rospy.Publisher('delivery_fellow/wheel_R2_effort_controller/command', Float64, queue_size=1)
+        self.pub_R3 = rospy.Publisher('delivery_fellow/wheel_R3_effort_controller/command', Float64, queue_size=1)
+        self.pub_L1 = rospy.Publisher('delivery_fellow/wheel_L1_effort_controller/command', Float64, queue_size=1)
+        self.pub_L2 = rospy.Publisher('delivery_fellow/wheel_L2_effort_controller/command', Float64, queue_size=1)
+        self.pub_L3 = rospy.Publisher('delivery_fellow/wheel_L3_effort_controller/command', Float64, queue_size=1)
+
+        rospy.init_node('diff_drive_controller')
+        self.nodeName = rospy.get_name()
+        rospy.loginfo("{0} started".format(self.nodeName))
+
+        rospy.Subscriber("cmd_vel", Twist, self.twistCallback)
+
+        self.ticksPerMeter = 50.0
+        self.wheelSeparation = 1.0
+        self.maxMotorSpeed = 100.0
+        self.rate = float(rospy.get_param('~rate', 10.0))
+        self.timeout = float(rospy.get_param('~timeout', 0.2))
+
+        self.controller.setWheelSeparation(self.wheelSeparation)
+        self.controller.setTicksPerMeter(self.ticksPerMeter)
+        self.controller.setMaxMotorSpeed(self.maxMotorSpeed)
+
+        rate = rospy.Rate(self.rate)
+        self.lastTwistTime = rospy.get_time()
+        while not rospy.is_shutdown():
+            self.publish()
+            rate.sleep()
+
+    def publish(self):
+        if rospy.get_time() - self.lastTwistTime < self.timeout:
+            speeds = self.controller.getSpeeds(self.linearVelocity,
+                                               self.angularVelocity)
+            # self.leftPub.publish(int(speeds.left))
+            # self.rightPub.publish(int(speeds.right))
+
+            self.pub_R1.publish(int(speeds.right))
+            self.pub_R2.publish(int(speeds.right))
+            self.pub_R3.publish(int(speeds.right))
+            self.pub_L1.publish(int(speeds.left))
+            self.pub_L2.publish(int(speeds.left))
+            self.pub_L3.publish(int(speeds.left))
+
+        else:
+
+            self.pub_R1.publish(0)
+            self.pub_R2.publish(0)
+            self.pub_R3.publish(0)
+            self.pub_L1.publish(0)
+            self.pub_L2.publish(0)
+            self.pub_L3.publish(0)
+
+    def twistCallback(self, twist):
+        self.linearVelocity = twist.linear.x
+        self.angularVelocity = twist.angular.z
+        self.lastTwistTime = rospy.get_time()
+
+if __name__ == '__main__':
+    try:
+        node = ControllerNode()
+        node.main()
+    except rospy.ROSInterruptException:
+        pass

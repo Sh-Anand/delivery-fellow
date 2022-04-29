@@ -1,0 +1,8 @@
+prefix=/home/shashank/ARMS/delivery-fellow/Jetson/catkin_ws/install
+
+Name: delivery_fellow
+Description: Description of delivery_fellow
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
